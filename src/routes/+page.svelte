@@ -4,8 +4,11 @@
 
 <div class="w-full h-full bg-[#f3f3f3] flex flex-col font-serif">
 	<!-- Cover image -->
-	<div class="w-full h-[550px] md:h-[650px] lg:h-[750px] bg-image bg-[url('cover.jpg')] relative">
+	<div class="w-full h-[550px] md:h-[650px] lg:h-[750px] relative">
 		<!-- Holder for logo and name -->
+		<div class="bg-image bg-[url('/cover.jpg')] w-full h-[550px] md:h-[650px] lg:h-[750px] z-0">
+		</div>
+		
 		<div class="w-full absolute bottom-6 left-0 lg:left-6 flex flex-row gap-2 p-2 md:p-4 lg:p-8 z-20">
 			<!-- Logo -->
 			<div>
@@ -23,9 +26,9 @@
 		</div>
 
 		<!-- Black gradient -->
-		<div class="w-full h-full opacity-60 bg-gradient-to-b from-transparent to-black z-10">
-
+		<div class="w-full h-full opacity-60 bg-gradient-to-b from-transparent to-black z-20">
 		</div>
+
 	</div>
 
 	<!-- Header + CTA -->
