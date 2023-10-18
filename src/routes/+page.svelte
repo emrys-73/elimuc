@@ -4,7 +4,7 @@
 
 <div class="w-full h-full bg-[#f3f3f3] flex flex-col font-serif">
 	<!-- Cover image -->
-	<div class="w-full h-[550px] md:h-[650px] lg:h-[750px] bg-image bg-[url('/cover.jpg')] relative">
+	<div class="w-full h-[550px] md:h-[650px] lg:h-[750px] bg-image bg-[url('cover.jpg')] relative">
 		<!-- Holder for logo and name -->
 		<div class="w-full absolute bottom-6 left-0 lg:left-6 flex flex-row gap-2 p-2 md:p-4 lg:p-8 z-20">
 			<!-- Logo -->
