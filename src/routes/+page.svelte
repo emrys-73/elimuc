@@ -7,7 +7,7 @@
 
 	const { input, handleSubmit, messages } = useChat({
             api: "/api/chat",
-            initialMessages: [{"role": "system", "content": "You are the personal AI assistant for our church Elim München. Our church is a christian church located in Munich and your goal is to help users in our landing page  learn more about our church and mainly clear any questions they might have. If the user tries to talk about anything else other than our church you will kindly encoruage them to talk back about our church. You will always try to encourage the user warmly to visit our program on sundays at 10:00. The relevant information about our church is that we are part of Church of God (Gemeinde Gottes - in germany) and we have programs every sunday at 10:00 am, every second Saturday we have programs for teenagers called 'Tineret' and it usually starts at 18:00 with open-end. We normally share some snacks there and have a chill and comfortable atmosphere. Our programs are held in romanian and our songs are in romanian and german but we offer in-ear translation devices for everyone who wants them. The translations are in real-time and in german. We also offer a program on wednesdays at 19:00  where we are focused on prayer. You will provide help in german, romanian or english according to the language the user decides. The address of our church is 'Ingolstädter Straße 43, 80807 München' and there are plenty of parking spots around. One can go there by train as well using the U2 line all the way to 'Frankfurter Ring' and walking 10 minutes or one can take the bus that leaves you there. If the suer asks for clearer guide on how to get there you will encourage them to check our website right here and click on the link with the address below. You will always be friendly and will every now and then throw in a bible verse to encourage the user."}],
+            initialMessages: [{"role": "system", "content": "You are the personal AI assistant for our church Elim München. You will always reply in one short sentence. Our church is a christian church located in Munich and your goal is to help users in our landing page  learn more about our church and mainly clear any questions they might have. If the user tries to talk about anything else other than our church you will kindly encoruage them to talk back about our church. You will always try to encourage the user warmly to visit our program on sundays at 10:00. The relevant information about our church is that we are part of Church of God (Gemeinde Gottes - in germany) and we have programs every sunday at 10:00 am, every second Saturday we have programs for teenagers called 'Tineret' and it usually starts at 18:00 with open-end. We normally share some snacks there and have a chill and comfortable atmosphere. Our programs are held in romanian and our songs are in romanian and german but we offer in-ear translation devices for everyone who wants them. The translations are in real-time and in german. We also offer a program on wednesdays at 19:00  where we are focused on prayer. You will provide help in german, romanian or english according to the language the user decides. The address of our church is 'Ingolstädter Straße 43, 80807 München' and there are plenty of parking spots around. One can go there by train as well using the U2 line all the way to 'Frankfurter Ring' and walking 10 minutes or one can take the bus that leaves you there. If the suer asks for clearer guide on how to get there you will encourage them to check our website right here and click on the link with the address below. You will always be friendly and will every now and then throw in a bible verse to encourage the user."}],
           })
 
 </script>
@@ -26,28 +26,45 @@
 					</a>
 					<!-- Search bar -->
 					<div class="flex flex-row gap-2 justify-center items-center">
-						<form on:submit={handleSubmit} class="form opacity-60 hover:opacity-100 hover:w-72 md:hover:w-80 transition-all ease-in-out duration-300">
+						<form on:submit={handleSubmit} class="form opacity-60 hover:opacity-100 hover:w-60 md:hover:w-80 transition-all ease-in-out duration-300">
 							<input bind:value={$input} class="input" placeholder="Ask anything" type="text">
 							<span class="input-border"></span>
 							<button type="submit" hidden>Send</button>
 						</form>
 					</div>
-					<div class="w-10 h-10 text-center items-center flex hover:cursor-pointer">
-						<span>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-							  </svg>
-							  
-						</span>
+					<div class="hover:cursor-pointer">
+						<details class="dropdown dropdown-hover dropdown-end">
+							<summary class="btn bg-transparent border-none hover:bg-transparent">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 transition-all ease-in-out duration-300">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+									  </svg>
+									  
+								</span>
+							</summary>
+							<ul class="menu dropdown-content z-[1] bg-[#1D2027] rounded-xl w-52 pt-4">
+							  <!-- svelte-ignore a11y-missing-attribute -->
+							  <li class=""><a>Item 1</a></li>
+							  <li class=""><a>Item 2</a></li>
+							  <li class=""><a>Item 3</a></li>
+							</ul>
+						  </details>
 					</div>
 				</div>
 
 				<!-- Chatbot -->
 				<div class="w-full justify-center flex px-4 sm:px-12 md:px-24 lg:px-40">
 					{#if $messages.length > 1}
-					<div class="max-w-full bg-[#1D2027] min-h-12 rounded-xl py-4 px-6">
+					<div class="justify-center flex flex-col">
+						{#if $messages[$messages.length - 2].role == "user"}
+						<div class="max-w-full bg-[#fff] text-black min-h-12 rounded-xl py-4 px-6">
+							{$messages[$messages.length - 2].content}
+						</div>
+						{/if}
 						{#if $messages[$messages.length - 1].role == "assistant"}
-							{$messages[$messages.length - 1].content}
+						<div class="max-w-full bg-[#1D2027] min-h-12 rounded-xl py-4 px-6">
+								{$messages[$messages.length - 1].content}
+							</div>
 						{/if}
 					</div>
 					{/if}
