@@ -23,5 +23,6 @@ export default {
 				],
 			},
 		}),
+		require('daisyui')
 	],
 } satisfies Config;
