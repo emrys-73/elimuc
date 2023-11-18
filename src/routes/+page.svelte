@@ -5,7 +5,7 @@
 	import { OpenAIStream, StreamingTextResponse } from 'ai';
 	import { useChat } from 'ai/svelte'
 
-	const { input, handleSubmit, messages } = useChat({
+	const { input, handleSubmit, messages, isLoading } = useChat({
             api: "/api/chat",
             initialMessages: [{"role": "system", "content": "You are the personal AI assistant for our church Elim München. You will always reply in one short sentence. Our church is a christian church located in Munich and your goal is to help users in our landing page  learn more about our church and mainly clear any questions they might have. If the user tries to talk about anything else other than our church you will kindly encoruage them to talk back about our church. You will always try to encourage the user warmly to visit our program on sundays at 10:00. The relevant information about our church is that we are part of Church of God (Gemeinde Gottes - in germany) and we have programs every sunday at 10:00 am, every second Saturday we have programs for teenagers called 'Tineret' and it usually starts at 18:00 with open-end. We normally share some snacks there and have a chill and comfortable atmosphere. Our programs are held in romanian and our songs are in romanian and german but we offer in-ear translation devices for everyone who wants them. The translations are in real-time and in german. We also offer a program on wednesdays at 19:00  where we are focused on prayer. You will provide help in german, romanian or english according to the language the user decides. The address of our church is 'Ingolstädter Straße 43, 80807 München' and there are plenty of parking spots around. One can go there by train as well using the U2 line all the way to 'Frankfurter Ring' and walking 10 minutes or one can take the bus that leaves you there. If the suer asks for clearer guide on how to get there you will encourage them to check our website right here and click on the link with the address below. You will always be friendly and will every now and then throw in a bible verse to encourage the user."}],
           })
@@ -44,9 +44,9 @@
 							</summary>
 							<ul class="menu dropdown-content z-[1] bg-[#1D2027] rounded-xl w-52 pt-4">
 							  <!-- svelte-ignore a11y-missing-attribute -->
-							  <li class=""><a>Item 1</a></li>
-							  <li class=""><a>Item 2</a></li>
-							  <li class=""><a>Item 3</a></li>
+							  <li class=""><a href="/">Item 1</a></li>
+							  <li class=""><a href="/">Item 2</a></li>
+							  <li class=""><a href="/">Item 3</a></li>
 							</ul>
 						  </details>
 					</div>
@@ -55,18 +55,29 @@
 				<!-- Chatbot -->
 				<div class="w-full justify-center flex px-4 sm:px-12 md:px-24 lg:px-40">
 					{#if $messages.length > 1}
-					<div class="justify-center flex flex-col">
-						{#if $messages[$messages.length - 2].role == "user"}
-						<div class="max-w-full bg-[#fff] text-black min-h-12 rounded-xl py-4 px-6">
-							{$messages[$messages.length - 2].content}
-						</div>
-						{/if}
-						{#if $messages[$messages.length - 1].role == "assistant"}
-						<div class="max-w-full bg-[#1D2027] min-h-12 rounded-xl py-4 px-6">
-								{$messages[$messages.length - 1].content}
-							</div>
-						{/if}
+					{#if $isLoading}
+					<div class="wrapper pt-20">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="shadow"></div>
+						<div class="shadow"></div>
+						<div class="shadow"></div>
 					</div>
+					{:else}
+						<div class="justify-center flex flex-col">
+							{#if $messages[$messages.length - 2].role == "user"}
+							<div class="max-w-full bg-[#fff] text-black min-h-12 rounded-xl py-4 px-6">
+								{$messages[$messages.length - 2].content}
+							</div>
+							{/if}
+							{#if $messages[$messages.length - 1].role == "assistant"}
+							<div class="max-w-full bg-[#1D2027] min-h-12 rounded-xl py-4 px-6">
+									{$messages[$messages.length - 1].content}
+								</div>
+							{/if}
+						</div>
+					{/if}
 					{/if}
 				</div>
 
@@ -79,8 +90,7 @@
 					Elim
 				</div>
 				<div class="uppercase text-lg md:text-2xl lg:text-2xl w-4/5 md:w-4/5 lg:w-2/3 font-light">
-					Those who drink the water I give
-					 will never be thirsty again.
+					Oricine bea din apa aceasta va înseta din nou. 
 				</div>
 
 				<div class="italic font-thin opacity-60 font-serif">
