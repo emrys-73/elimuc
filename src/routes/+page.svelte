@@ -14,7 +14,7 @@
 
 
 <!-- Body -->
-<section class="w-full h-full justify-center flex bg-white flex-col text-black">
+<section class="w-full h-full justify-center flex bg-white flex-col text-black baskerville">
 	<!-- Hero Section -->	
 	<section class="w-full h-full justify-center flex flex-col items-center text-white">
 		<div class="h-[900px] w-full bg-cover bg-[url('/bb_ocean.png')] jusitfy-center flex flex-col items-center px-4 md:px-20">
@@ -27,7 +27,7 @@
 					<!-- Search bar -->
 					<div class="flex flex-row gap-2 justify-center items-center">
 						<form on:submit={handleSubmit} class="form opacity-60 hover:opacity-100 hover:w-60 md:hover:w-80 transition-all ease-in-out duration-300">
-							<input bind:value={$input} class="input" placeholder="Ask anything" type="text">
+							<input bind:value={$input} class="input roboto" placeholder="Ask anything" type="text">
 							<span class="input-border"></span>
 							<button type="submit" hidden>Send</button>
 						</form>
@@ -44,9 +44,9 @@
 							</summary>
 							<ul class="menu dropdown-content z-[1] bg-[#1D2027] rounded-xl w-52 pt-4">
 							  <!-- svelte-ignore a11y-missing-attribute -->
-							  <li class=""><a href="/">Item 1</a></li>
-							  <li class=""><a href="/">Item 2</a></li>
-							  <li class=""><a href="/">Item 3</a></li>
+							  <li class=""><a href="/">About Us</a></li>
+							  <li class=""><a href="/">Vision</a></li>
+							  <li class=""><a href="/">Testimonials</a></li>
 							</ul>
 						  </details>
 					</div>
@@ -65,7 +65,7 @@
 						<div class="shadow"></div>
 					</div>
 					{:else}
-						<div class="justify-center flex flex-col">
+						<div class="justify-center flex flex-col roboto">
 							{#if $messages[$messages.length - 2].role == "user"}
 							<div class="max-w-full bg-[#fff] text-black min-h-12 rounded-xl py-4 px-6">
 								{$messages[$messages.length - 2].content}
@@ -86,15 +86,15 @@
 
 
 			<div class="w-full h-full justify-center flex flex-col items-center text-center gap-6">
-				<div class="text-6xl font-semibold uppercase">
+				<div class="text-6xl font-semibold uppercase roboto">
 					Elim
 				</div>
-				<div class="uppercase text-lg md:text-2xl lg:text-2xl w-4/5 md:w-4/5 lg:w-2/3 font-light">
-					Oricine bea din apa aceasta va înseta din nou. 
+				<div class="uppercase text-lg md:text-2xl lg:text-2xl w-4/5 md:w-4/5 lg:w-2/3 font-light roboto">
+					cel care bea din apa pe care i-o ofer Eu, nu va mai înseta.
 				</div>
 
-				<div class="italic font-thin opacity-60 font-serif">
-					John 4.14
+				<div class="italic font-extralight opacity-80 font-serif">
+					Ioan 4.14
 				</div>
 			</div>
 		</div>
@@ -106,7 +106,7 @@
 					Motto
 				</div>
 				<div class="italic">
-					“Pot totul în Hristos care mă întăreșete”
+					“Pot totul în Hristos care mă întărește”
 				</div>
 				<div class="italic opacity-50">
 					Filipeni 4:13
@@ -132,7 +132,7 @@
 				<div class="text-4xl py-3">
 					Vino cu noi
 				</div>
-				<div class=" font-sans font-light">
+				<div class=" font-sans font-light roboto">
 					Ne bucurăm de fiecare dată când avem ocazia să ne închinăm împreună și te invităm cu drag să iei parte la oricare din programele noastre.
 				</div>
 			</div>
