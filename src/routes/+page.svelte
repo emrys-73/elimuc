@@ -17,7 +17,7 @@
 <section class="w-full h-full justify-center flex bg-white flex-col text-black baskerville">
 	<!-- Hero Section -->	
 	<section class="w-full h-full justify-center flex flex-col items-center text-white">
-		<div class="h-[900px] w-full bg-cover bg-[url('/bb_ocean.png')] jusitfy-center flex flex-col items-center px-4 md:px-20">
+		<div class="h-[900px] w-full bg-cover bg-[url('/b_bg.png')] jusitfy-center flex flex-col items-center px-4 md:px-20">
 				<div class="w-full h-20 mx-24 gap-2 md:gap-24 items-center justify-between flex py-4">
 					<a href="/">
 						<div class="w-8 h-8">
