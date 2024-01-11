@@ -158,10 +158,9 @@
 
 		<div class="w-full h-full flex flex-col md:flex-row min-h-[100vh] md:min-h-[60vh] text-white gap-4">
 
-			<div class="{$animate} w-full md:w-[40vw] hover:md:w-[60vw] h-1/3 md:h-full hover:h-1/2 hover:md:h-full shrink-0">
-				<a href="/#map">
-					<!-- <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NWY4NzE5OG5iNWY2aDBzMWtnaWI3amQyOWZfMjAyNDAxMTRUMDkwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL"></a> -->
-				<div class="bg-[url('/photos/praise.jpeg')] bg-image rounded-2xl w-full h-full relative overflow-hidden">
+			<div class="{$animate} w-full md:w-[40vw] hover:md:w-[60vw] h-1/3 md:h-full bg-[url('/photos/praise.jpeg')] bg-image rounded-2xl hover:h-1/2 hover:md:h-full shrink-0">
+				<a href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NWY4NzE5OG5iNWY2aDBzMWtnaWI3amQyOWZfMjAyNDAxMTRUMDkwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
+				<div class=" rounded-2xl w-full h-full relative overflow-hidden">
 					<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
 						
 						<div class="w-full absolute bottom-8 left-8 justify-start">
@@ -179,8 +178,7 @@
 			<div class="flex flex-col gap-4  w-full h-full">
 
 				<div class="{$animate} overflow-hidden w-full h-1/2 hover:h-5/6 rounded-2xl bg-[url('/photos/t.jpeg')] bg-image relative">
-					<!-- <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MDFwazdlZG9yZDA0NzVocmJ2NzdydDRnb2dfMjAyNDAxMTBUMTgwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL"> -->
-						<a href="/#map">
+					<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MDFwazdlZG9yZDA0NzVocmJ2NzdydDRnb2dfMjAyNDAxMTBUMTgwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
 						<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
 						
 						<div class="w-full absolute bottom-8 left-8 justify-start">
@@ -196,9 +194,7 @@
 
 
 				<div class="overflow-hidden w-full h-1/2 hover:h-5/6 rounded-2xl bg-[url('/photos/pnj.jpeg')] bg-image relative">
-					<!-- <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NDduZ25kcWkwMDI3dTBjMDQ5ZWlxNjBtMHNfMjAyNDAxMTNUMTcwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
-					 -->
-					 <a href="/#map">
+					<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NDduZ25kcWkwMDI3dTBjMDQ5ZWlxNjBtMHNfMjAyNDAxMTNUMTcwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
 					
 						<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
 						
