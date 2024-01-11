@@ -41,7 +41,7 @@
 
 <!-- Body -->
 <div class="w-full h-full flex flex-col font-sans bg-white relative">
-	<div class="w-full bg-black h-20 z-50 justify-between items-center flex py-8 px-4">
+	<div class="w-full bg-black h-20 z-50 justify-between items-center flex py-8 ">
 
 
 		<!-- Chatbot -->
@@ -85,7 +85,7 @@
 
 		
 
-		<a href="/" class="items-center justify-center">
+		<a href="/" class="items-center justify-center pl-4">
 			<img src="/full_logo.png" alt="BEM" class="h-14">
 		</a>
 
@@ -95,7 +95,7 @@
 			</a>
 		</div> -->
 
-		<div class=" h-full flex items-center justify-center text-white">
+		<div class=" h-full flex items-center justify-center text-white pr-4">
 			<form on:submit={handleSubmit} class="relative">
 				<input type="text" placeholder="Începe o conversație" bind:value={$input} class="{$animate} w-[60vw] px-6 pr-12 rounded-full placeholder:opacity-60 max-w-[300px] focus:max-w-[800px] bg-transparent">
 				<button type="submit" class="absolute right-4 top-2">
@@ -145,9 +145,9 @@
 	</div>
 
 
-	<div class="w-full h-full flex flex-col px-6 md:px-6 lg:px-12 xl:px-20 py-4 md:py-8 lg:py-10 xl:py-12 text-black">
+	<div class="w-full h-full flex flex-col px-6 md:px-6 lg:px-12 xl:px-20 pt-4 md:pt-8 lg:pt-10 xl:pt-12 text-black">
 
-		<div class="font-sans flex flex-col py-16 gap-6 px-2 ">
+		<div class="font-sans flex flex-col pt-12 pb-16 gap-6 px-2 ">
 			<h2 class="text-5xl font-bold">
 				Te invităm
 			</h2>
@@ -156,9 +156,9 @@
 			</div>
 		</div>
 
-		<div class="w-full h-full flex flex-col md:flex-row min-h-[120vh] md:min-h-[60vh] text-white gap-4">
+		<div class="w-full h-full flex flex-col md:flex-row min-h-[100vh] md:min-h-[60vh] text-white gap-4">
 
-			<div class="{$animate} w-full md:w-[40vw] hover:md:w-[60vw] h-1/2 md:h-full hover:h-3/4 hover:md:h-full shrink-0">
+			<div class="{$animate} w-full md:w-[40vw] hover:md:w-[60vw] h-1/2 md:h-full hover:h-2/3 hover:md:h-full shrink-0">
 				<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NWY4NzE5OG5iNWY2aDBzMWtnaWI3amQyOWZfMjAyNDAxMTRUMDkwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
 				<div class="bg-[url('/photos/praise.jpg')] bg-image rounded-2xl w-full h-full relative overflow-hidden">
 					<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
@@ -216,21 +216,31 @@
 	</div>
 
 
-	<div class="w-full h-[120vh] md:h-[100vh] py-10 shrink-0 flex flex-col justify-center items-center">
-		<div class=" md:hidden w-full h-full flex flex-col justify-center items-center">
-			
-
-			<div class="w-full h-full text-center px-10 text-black flex flex-col gap-4 px-8items-center justify-center">
-				<h3 class="text-4xl font-semibold">
+	<div class="w-full h-[100vh] md:h-[100vh] py-10 shrink-0 flex flex-col justify-center items-center">
+		<div class=" md:hidden w-full h-full flex flex-col justify-center items-center relative">
+			<div class="bg-[url('/photos/team.jpg')] bg-image h-80 w-full relative flex justify-center items-center py-12 shrink-0">
+				<div class="w-full h-full bg-gradient-to-b from-transparent to-black opacity-80 absolute top-0"/>
+				<h3 class="text-4xl font-semibold text-white z-50">
 					Noi
 				</h3>
+				
+
+			</div>
+			
+
+			
+				
+		
+
+			<div class="w-full h-full  text-center px-10 text-black flex flex-col gap-4 px-8items-center justify-center">
+				
 
 				<p class="font-light">
 					{about}
 				</p>
 			</div>
 
-			<img src="/photos/team.jpg" alt="">
+			
 			<!-- <div class="bg-red-500 h-full w-full flex flex-row gap-4 justify-start items-center">
 				<div class="bg-[url('/photos/jlu.jpeg')] w-full h-full bg-image">
 
@@ -262,7 +272,7 @@
 
 
 	<!-- Maps -->
-	<div id="map" class="w-full min-h-[70vh] flex flex-col md:flex-row px-4 text-black md:gap-8 gap-4 md:px-20 shrink-0">
+	<div id="map" class="w-full min-h-[50vh] flex flex-col md:flex-row px-4 text-black md:gap-8 gap-4 md:px-20 shrink-0">
 		<div class="rounded-xl justify-center items-center flex w-full min-h-[60vh] md:w-1/2">			
 			<iframe class="w-full h-full " title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2659.947791628363!2d11.5812019!3d48.1883574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e743b45bfffff%3A0xd137c2e364737a7f!2sBiserica%20Lui%20Dumnezeu%20Elim%20M%C3%BCnchen!5e0!3m2!1sen!2sde!4v1704965435632!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
