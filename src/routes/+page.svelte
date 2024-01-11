@@ -117,7 +117,7 @@
 		
 
 		<video class="absolute w-full h-full object-cover z-0" muted autoplay loop playsinline disablepictureinpicture>
-			<source src="/videos/home.MOV" type="video/mp4" />
+			<source src="/videos/hero.mp4" type="video/mp4" />
 		</video>
 
 		<!-- Content -->
@@ -160,7 +160,7 @@
 
 			<div class="{$animate} w-full md:w-[40vw] hover:md:w-[60vw] h-1/2 md:h-full hover:h-2/3 hover:md:h-full shrink-0">
 				<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NWY4NzE5OG5iNWY2aDBzMWtnaWI3amQyOWZfMjAyNDAxMTRUMDkwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
-				<div class="bg-[url('/photos/praise.jpg')] bg-image rounded-2xl w-full h-full relative overflow-hidden">
+				<div class="bg-[url('/photos/praise.jpeg')] bg-image rounded-2xl w-full h-full relative overflow-hidden">
 					<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
 						
 						<div class="w-full absolute bottom-8 left-8 justify-start">
@@ -177,7 +177,7 @@
 
 			<div class="flex flex-col gap-4  w-full h-full">
 
-				<div class="{$animate} overflow-hidden w-full h-1/2 hover:h-5/6 rounded-2xl bg-[url('/photos/t.jpg')] bg-image relative">
+				<div class="{$animate} overflow-hidden w-full h-1/2 hover:h-5/6 rounded-2xl bg-[url('/photos/t.jpeg')] bg-image relative">
 					<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MDFwazdlZG9yZDA0NzVocmJ2NzdydDRnb2dfMjAyNDAxMTBUMTgwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
 						<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
 						
@@ -193,7 +193,7 @@
 				</div>
 
 
-				<div class="overflow-hidden w-full h-1/2 hover:h-5/6 rounded-2xl bg-[url('/photos/pnu.jpg')] bg-image relative">
+				<div class="overflow-hidden w-full h-1/2 hover:h-5/6 rounded-2xl bg-[url('/photos/pnj.jpeg')] bg-image relative">
 					<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NDduZ25kcWkwMDI3dTBjMDQ5ZWlxNjBtMHNfMjAyNDAxMTNUMTcwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
 					
 						<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
@@ -218,7 +218,7 @@
 
 	<div class="w-full h-[100vh] md:h-[100vh] py-10 shrink-0 flex flex-col justify-center items-center">
 		<div class=" md:hidden w-full h-full flex flex-col justify-center items-center relative">
-			<div class="bg-[url('/photos/team.jpg')] bg-image h-80 w-full relative flex justify-center items-center py-12 shrink-0">
+			<div class="bg-[url('/photos/team.jpeg')] bg-image h-80 w-full relative flex justify-center items-center py-12 shrink-0">
 				<div class="w-full h-full bg-gradient-to-b from-transparent to-black opacity-80 absolute top-0"/>
 				<h3 class="text-4xl font-semibold text-white z-50">
 					Noi
