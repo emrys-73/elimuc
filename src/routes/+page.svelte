@@ -160,7 +160,7 @@
 
 			<div class="{$animate} w-full md:w-[40vw] hover:md:w-[60vw] h-1/3 md:h-full hover:h-1/2 hover:md:h-full shrink-0">
 				<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NWY4NzE5OG5iNWY2aDBzMWtnaWI3amQyOWZfMjAyNDAxMTRUMDkwMDAwWiA2MzY3YzIzYzFkNmNjMTAyYzIwNjYwMGU4Mzg5OTc4Y2UxNDRkMWI1YTJlNDFjNzFkN2IyYjM5N2FlNjBhYzE3QGc&amp;tmsrc=6367c23c1d6cc102c206600e8389978ce144d1b5a2e41c71d7b2b397ae60ac17%40group.calendar.google.com&amp;scp=ALL">
-				<div class="bg-[url('/photos/praise.jpeg')] bg-image rounded-2xl w-full h-full relative overflow-hidden">
+				<div class="bg-[url('/photos/hands.png')] bg-image rounded-2xl w-full h-full relative overflow-hidden">
 					<div class="absolute bg-gradient-to-b from-transparent to-black w-full h-full opacity-80"/>
 						
 						<div class="w-full absolute bottom-8 left-8 justify-start">
@@ -249,7 +249,7 @@
 		</div>
 
 		<!-- Large screen version -->
-		<div class="w-full h-full bg-[url('/photos/team.jpg')] bg-image hidden md:flex relative">
+		<div class="w-full h-full bg-[url('/photos/team.jpeg')] bg-image hidden md:flex relative">
 			<div class="w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"/>
 
 			<div class="absolute bottom-16 text-center text-white flex flex-col gap-2 px-20 xl:px-60">
