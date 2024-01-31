@@ -167,6 +167,7 @@
 						Ingolstädter Str. 43, 80807 München
 					</div>
 				</a>
+				<!-- Pot totul in Hristos care ma intareste -->
 			</div>
 		</div>
 	</section>
