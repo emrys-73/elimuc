@@ -153,6 +153,7 @@
 				Miercuri / orele 19.00
 			</div>
 		</div>
+		<!-- Vrednic de adorare -->
 	</section>
 
 	<!-- How to find us -->
